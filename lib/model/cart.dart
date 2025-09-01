@@ -1,4 +1,4 @@
-import 'package:app_food/model/product_model.dart';
+import 'package:food_app/model/product_model.dart';
 
 class Cart {
   List<Product> products;

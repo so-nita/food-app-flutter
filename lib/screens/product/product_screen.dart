@@ -1,7 +1,7 @@
-import 'package:app_food/constant/constant.dart';
-import 'package:app_food/model/product_model.dart';
-import 'package:app_food/widgets/widget.dart';
 import 'package:flutter/material.dart';
+import 'package:food_app/constant/constant.dart';
+import 'package:food_app/model/product_model.dart';
+import 'package:food_app/widgets/widget.dart';
 
 class ProductScreen extends StatelessWidget {
   static const String routeName = '/product';

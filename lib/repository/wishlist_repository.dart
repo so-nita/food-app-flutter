@@ -1,4 +1,4 @@
-import 'package:app_food/model/product_model.dart';
+import 'package:food_app/model/product_model.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class WishlistRepository {
@@ -10,14 +10,17 @@ class WishlistRepository {
   //   });
   // }
   Future<List<Product>> getProduct() async {
-    final query = Supabase.instance.client.from('product');
-    PostgrestResponse response;
-    // ignore: deprecated_member_use
-    response = await query.execute();
-    if (response.data != null) {
-      return (response.data as List<dynamic>).map((e) => Product()).toList();
-    }
-    return response.data;
+  final response = await Supabase.instance.client
+      .from('product')
+      .select();
+
+  if (response != null) {
+    return (response as List<dynamic>)
+        .map((e) => Product.fromJson(e)) // assuming you have a fromJson
+        .toList();
   }
+  return [];
+}
+
   // Future
 }

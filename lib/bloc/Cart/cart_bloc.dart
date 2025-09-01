@@ -1,6 +1,6 @@
-import 'package:app_food/model/cart.dart';
-import 'package:app_food/repository/cart_repository.dart';
 import 'package:bloc/bloc.dart';
+import 'package:food_app/model/cart.dart';
+import 'package:food_app/repository/cart_repository.dart';
 
 import 'cart_event.dart';
 import 'cart_state.dart';

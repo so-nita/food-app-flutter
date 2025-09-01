@@ -1,5 +1,5 @@
-import 'package:app_food/model/category_model.dart';
 import 'package:equatable/equatable.dart';
+import 'package:food_app/model/category_model.dart';
 
 abstract class CategoryState extends Equatable {
   @override

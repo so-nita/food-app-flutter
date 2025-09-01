@@ -1,6 +1,6 @@
-import 'package:app_food/model/cart.dart';
-import 'package:app_food/model/product_model.dart';
 import 'package:equatable/equatable.dart';
+import 'package:food_app/model/cart.dart';
+import 'package:food_app/model/product_model.dart';
 
 class CartState extends Equatable {
   @override

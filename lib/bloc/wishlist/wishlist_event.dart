@@ -1,5 +1,5 @@
-import 'package:app_food/model/product_model.dart';
 import 'package:equatable/equatable.dart';
+import 'package:food_app/model/product_model.dart';
 
 abstract class WishlistEvent extends Equatable {
   const WishlistEvent();

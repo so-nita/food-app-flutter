@@ -1,12 +1,12 @@
-import 'package:app_food/bloc/product/product_bloc.dart';
-import 'package:app_food/bloc/product/product_event.dart';
-import 'package:app_food/bloc/product/product_state.dart';
-import 'package:app_food/model/category_model.dart';
-import 'package:app_food/model/product_model.dart';
-import 'package:app_food/repository/product_repository.dart';
-import 'package:app_food/widgets/product_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:food_app/bloc/product/product_bloc.dart';
+import 'package:food_app/bloc/product/product_event.dart';
+import 'package:food_app/bloc/product/product_state.dart';
+import 'package:food_app/model/category_model.dart';
+import 'package:food_app/model/product_model.dart';
+import 'package:food_app/repository/product_repository.dart';
+import 'package:food_app/widgets/product_card.dart';
 import '../../widgets/widget.dart';
 
 class CategoryScreen extends StatelessWidget {

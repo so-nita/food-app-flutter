@@ -12,8 +12,12 @@ class CategoryRepository {
 
   Future<List<Category>> getAllCategory() async {
     // ignore: deprecated_member_use
-    var response = await client.from('category').select().execute();
-    var data = response.data as List<dynamic>;
+    //var response = await client.from('category').select().execute();
+    final response = await Supabase.instance.client
+      .from('category')
+      .select();
+
+    var data = response as List<dynamic>;
 
     var result = data.map((e) => Category.fromJson(e)).toList();
     return result;

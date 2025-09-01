@@ -1,6 +1,6 @@
-import 'package:app_food/model/category_model.dart';
-import 'package:app_food/repository/category_repository.dart';
 import 'package:bloc/bloc.dart';
+import 'package:food_app/model/category_model.dart';
+import 'package:food_app/repository/category_repository.dart';
 import 'category_event.dart';
 import 'category_state.dart';
 

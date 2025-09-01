@@ -1,8 +1,9 @@
-import 'package:app_food/bloc/product/product_bloc.dart';
-import 'package:app_food/bloc/product/product_event.dart';
-import 'package:app_food/widgets/widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:food_app/bloc/product/product_bloc.dart';
+import 'package:food_app/bloc/product/product_event.dart';
+import 'package:food_app/widgets/custome_appbar.dart';
+import 'package:food_app/widgets/custome_navbar.dart';
 import '../../constant/constant.dart';
 import '../../model/product_model.dart';
 

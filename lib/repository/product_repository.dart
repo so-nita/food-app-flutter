@@ -9,8 +9,14 @@ class ProductRepository {
 
   Future<List<Product>> getAllProduct() async {
     // ignore: deprecated_member_use
-    var response = await client.from('product').select().execute();
-    var data = response.data as List<dynamic>;
+
+    final query = Supabase.instance.client.from('product');
+
+   final response = await Supabase.instance.client
+    .from('product')
+    .select();
+
+    var data = response as List<dynamic>;
     var result = data.map((e) => Product.fromJson(e)).toList();
     return result;
   }

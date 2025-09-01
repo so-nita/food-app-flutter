@@ -1,7 +1,11 @@
-import 'package:app_food/model/category_model.dart';
-import 'package:app_food/model/product_model.dart';
-import 'package:app_food/screens/screen.dart';
 import 'package:flutter/material.dart';
+import 'package:food_app/model/category_model.dart';
+import 'package:food_app/model/product_model.dart';
+import 'package:food_app/screens/cart/cart_screen.dart';
+import 'package:food_app/screens/category/category_screen.dart';
+import 'package:food_app/screens/home/home_screen.dart';
+import 'package:food_app/screens/product/product_screen.dart';
+import 'package:food_app/screens/wishlist/wishlist_screen.dart';
 
 class AppRouter {
   static Route onGenerateRoute(RouteSettings settings) {

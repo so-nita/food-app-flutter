@@ -1,5 +1,5 @@
-import 'package:app_food/constant/constant.dart';
 import 'package:flutter/material.dart';
+import 'package:food_app/constant/constant.dart';
 
 class CustomNavBar extends StatelessWidget {
   const CustomNavBar({

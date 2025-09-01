@@ -1,5 +1,5 @@
-import 'package:app_food/repository/product_repository.dart';
 import 'package:bloc/bloc.dart';
+import 'package:food_app/repository/product_repository.dart';
 
 import 'product_event.dart';
 import 'product_state.dart';
